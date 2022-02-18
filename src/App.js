@@ -49,20 +49,23 @@ function App() {
 
 
   return (
-    <div className="cardlist">
-      {cardList.sort(sortCards).map(card =>
-        <div
-          key={card.text + card.id}
-          draggable={true}
-          onDragStart={(e) => dragStartHandler(e, card)}
-          onDragLeave={(e) => dragLeaveHandler(e)}
-          onDragEnd={(e) => dragEndHandler(e)}
-          onDragOver={(e) => dragOverHandler(e)}
-          onDrop={(e) => onDropHandler(e, card)}
-          className="card">
-          {card.text}
-        </div>
-      )}
+    <div className="content-wrapper">
+      <h1 className="title">Drag-n-drop list </h1>
+      <div className="cardlist">
+        {cardList.sort(sortCards).map(card =>
+          <div
+            key={card.text + card.id}
+            draggable={true}
+            onDragStart={(e) => dragStartHandler(e, card)}
+            onDragLeave={(e) => dragLeaveHandler(e)}
+            onDragEnd={(e) => dragEndHandler(e)}
+            onDragOver={(e) => dragOverHandler(e)}
+            onDrop={(e) => onDropHandler(e, card)}
+            className="card">
+            {card.text}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
