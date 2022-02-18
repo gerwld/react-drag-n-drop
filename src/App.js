@@ -4,9 +4,9 @@ function App() {
   const [currentCard, setCurrentCard] = useState(null);
   const [cardList, setCardList] = useState([
     { id: 1, order: 5, text: 'Карточка 1' },
-    { id: 2, order: 2, text: 'Карточка 2' },
-    { id: 3, order: 3, text: 'Карточка 3' },
-    { id: 4, order: 4, text: 'Карточка 4' },
+    { id: 2, order: 3, text: 'Карточка 2' },
+    { id: 3, order: 4, text: 'Карточка 3' },
+    { id: 4, order: 2, text: 'Карточка 4' },
     { id: 5, order: 1, text: 'Карточка 5' },
   ]);
 
