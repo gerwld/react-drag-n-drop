@@ -54,6 +54,12 @@ code {
 }
 
 @media screen and (max-width: 700px) {
+  body {
+    width: 100vh;
+    height: 100vh;
+    overflow: hidden;
+  }
+
  .no-mobile {
    display: flex;
    justify-content: center;
