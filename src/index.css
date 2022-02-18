@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cardlist {
+  width: 100%;
+  padding: 30px;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100px;
+  min-height: 250px;
+  height: 40vh;
+  margin-right: 20px;
+  flex: 1 0 100px;
+
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40vh;
+
+  border: 1px solid gray;
+  border-radius: 10px;
+  user-select: none;
+  background-color: rgb(210, 213, 238);
+  transition: background 1s ease;
+}
+
+.card:nth-last-child(1) {
+  margin-right: 0;
+}
