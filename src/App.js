@@ -50,6 +50,9 @@ function App() {
 
   return (
     <div className="content-wrapper">
+      <div className="no-mobile">
+        <h1>Drag-n-drop list is only available on desktop.</h1>
+      </div>
       <h1 className="title">Drag-n-drop list </h1>
       <div className="cardlist">
         {cardList.sort(sortCards).map(card =>

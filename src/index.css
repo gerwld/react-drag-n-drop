@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.no-mobile {
+  display: none;
+}
+
 .content-wrapper {
   padding: 30px;
 }
@@ -29,14 +33,14 @@ code {
 .card {
   width: 100px;
   min-height: 250px;
-  height: 40vh;
+  height: 300px;
   margin-right: 20px;
   flex: 1 0 100px;
 
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  line-height: 40vh;
+  line-height: 300px;
 
   border: 1px solid gray;
   border-radius: 10px;
@@ -47,4 +51,27 @@ code {
 
 .card:nth-last-child(1) {
   margin-right: 0;
+}
+
+@media screen and (max-width: 700px) {
+ .no-mobile {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+
+   text-align: center;
+   background-color: #fff;
+   user-select: none;
+ }
+
+ .no-mobile h1 {
+   padding: 0 20px;
+   line-height: 1.4em;
+ }
 }
